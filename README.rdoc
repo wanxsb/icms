@@ -27,7 +27,7 @@
 * 7.运行server服务器
 	rails server
 
-* 8.打开<tt>http://localhost:3000</tt>可以浏览前台页面，想进入管理后台的话需要打开地址<tt>http://localhost:3000/refinery</tt>,首次登陆的话需要注册管理员帐号
+* 8.打开<tt>http://localhost:3000/</tt> 可以浏览前台页面，想进入管理后台的话需要打开地址<tt>http://localhost:3000/refinery/</tt>,首次登陆的话需要注册管理员帐号
 
 想了解项目支持那些批任务吗？运行<tt>rake -T</tt>可以看到所有支持的批处理任务
 
