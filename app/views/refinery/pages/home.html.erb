@@ -15,17 +15,17 @@
 		<div class="right small-part">
 			<div class="name">
 				<div  style="color:#343434;font-weight:bold;font-size:40px;font-family:Impact;float:left;text-align:right;width:50%;">
-					<%= product.title %>
+					<%= product.name %>
 				</div>
 			</div>
 			<div class="price">
-				<%= number_to_currency(product.description)%>
+				<%= number_to_currency(product.price)%>
 			</div>
 			<div class="description">
-				<%= product.description %>
+				<%= raw product.description %>
 			</div>
 			<div class="btn <%= cycle("btn-cms", "btn-shop") %>"">
-				<a href="#">t("know detail")</a>
+				<a href="#"><%= I18n.t("know detail") %></a>
 			</div>
 		</div>
 	</div>

@@ -25,7 +25,7 @@
   end
   
   photo = Refinery::Image.new
-  photo.image = File.open("#{Rails.root}/app/assets/images/demo/demo-shop.png")
+  photo.image = File.open("#{Rails.root}/app/assets/images/demo/demo-shop-small.png")
   photo.save!
   
   
