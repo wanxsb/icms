@@ -43,6 +43,12 @@ GIT
       rack-cache (>= 0.5.3)
       refinerycms-core (= 2.0.10)
 
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-products (1.0)
+      refinerycms-core (~> 2.0.10)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -200,6 +206,7 @@ DEPENDENCIES
   refinerycms-i18n (~> 2.0.0)
   refinerycms-inquiries (~> 2.0.0)
   refinerycms-page-images (~> 2.0.0)
+  refinerycms-products!
   refinerycms-search (~> 2.0.0)
   sass-rails (~> 3.2.3)
   sqlite3

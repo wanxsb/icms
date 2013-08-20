@@ -1,0 +1,34 @@
+zh-CN:
+  refinery:
+    plugins:
+      products:
+        title: 产品
+    products:
+      admin:
+        products:
+          actions:
+            create_new: 添加新产品
+            reorder: 对产品重新排序
+            reorder_done: 对产品的重新排序结束
+          records:
+            title: 产品
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Products yet. Click "Add New Product" to add your first product.
+            no_items_yet: 目前产品列表为空 . 点击 "添加新产品" 创建一个产品.
+          product:
+            view_live_html: 查看产品的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑产品
+            delete: 永久删除产品
+      products:
+        show:
+          other: 其他产品
+  activerecord:
+    attributes:
+      'refinery/products/product':
+        name: 产品名称
+        price: 价格
+        abstract: 产品介绍摘要
+        description: 产品图形描述
+        detail: 详情介绍
+        showOnIndex: 是否显示在首页
