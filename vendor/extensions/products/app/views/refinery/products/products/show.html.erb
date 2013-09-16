@@ -1,0 +1,63 @@
+<% content_for :body_content_title do %>
+  <%= @product.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @product.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Price</h1>
+    <p>
+      <%=raw @product.price %>
+    </p>
+  </section>
+  <section>
+    <h1>Abstract</h1>
+    <p>
+      <%=raw @product.abstract %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @product.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Detail</h1>
+    <p>
+      <%=raw @product.detail %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @product.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Show On Index</h1>
+    <p>
+      <%=raw @product.showOnIndex %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="products">
+      <% @products.each do |product| %>
+        <li>
+          <%= link_to product.title, refinery.products_product_path(product) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>
